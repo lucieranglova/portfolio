@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nanum+Gothic&family=Quicksand&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+
+<body>
+   <!-- <img class="contactimg" src="images/Contactformimg.png"> -->
+
+<!-- HEADER -->
+
+    <header class="header">
+        <a href="#" class="logo"><i class='bx bxs-ghost'></i> Lulu's Portfolio</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#project1section">My projects</a>
+            <a href="#contactme">Contact me!</a>
+        </nav>
+    </header>
+
+<!-- HOME SECTION -->
+
+    <section class="home" id="home">
+
+        <!-- HOME MEMOJI -->
+
+        <div class="home-memoji">
+            <img src="images/Memoji1.png" alt="">
+        </div>
+
+        <!-- HOME CONTENT -->
+
+        <div class="home-content">
+            <h1>Hello, I'm <span>Lulu</span></h1>
+            <h3>Lucie Ranglová</h3>
+            <h5><i class='bx bx-map'></i> Prague, Czech republic</h5>
+            <p>I'm an enthusiastic self-taught person who enjoys creating websites and apps. </p>
+
+                <!-- SOCIAL MEDIA ICONS -->
+
+            <div class="social-media">
+                <a href="https://www.instagram.com/lucieranglova/?hl=en"><i class='bx bxl-instagram'></i></a>
+                <a href="https://github.com/lucieranglova"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.linkedin.com/in/lucie-ranglová-6739142b0/"><i class='bx bxl-linkedin-square' ></i></a>
+            </div>
+
+            <!-- CV BUTTON -->
+
+            <a href="CV-en-2.pdf" download="" class="cvbtn"><i class='bx bx-download'></i> <spacer></spacer>Download My CV</a>
+        </div>     
+    </section>
+
+     <!-- MY PROJECTS -->
+
+    <div class="my-projects-h1">
+        <h1>My Projects</h1>
+    </div>
+
+    <!-- PROJECT 1 -->
+
+   <section class="project1section" id="project1section">
+
+    <div class="project1">
+
+        <!-- PROJECT 1 TEXT -->
+        <div class="project1text">
+            
+            <h2>DREAMZZZ</h2>
+            
+            <h3>My Dream Log</h3>
+            <div class="figma-dreamzzz">
+                <a href="https://www.figma.com/file/jSIikcL8pFH2TFDLRYPc9A/DREAMZZZ?type=design&node-id=0%3A1&mode=design&t=yOZxHvy11bAynFhz-1"><i class='bx bxl-figma'></i></a>
+                </div>
+                <div class="figmaprototype">
+                    <img src="images/Figmaprototypetxt.png">
+                </div>    
+            <ul>
+                <li>Dream log</li>
+                <li>Track your nightmares</li>
+                <li>Track your sleep quality</li>
+                <li>Sleep recorder</li>
+            </ul>
+
+            <!-- PROGRESS BAR -->
+
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <span class="title">In Progress</span>
+                    <div class="progress-box">
+                    <span class="progress-per"></span>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <!-- PROJECT 1 IMAGE -->
+
+    <div class="project1-img">
+        <img src="images/BM.png">
+    </div>  
+
+    <div class="project1-imgDM">
+    <img src="images/DM.png">
+    </div>
+
+   </section>
+
+   <!-- CONTACT ME SECTION -->
+
+    <section class="contactme" id="contactme">
+        <div class="container">
+            <div class="left">
+                <div class="form-wrapper">
+                    <div class="contact-heading">
+                        <h1>Thank you!</h1>
+                        <h3>Contact me</h3>
+                    </div>
+                    
+
+                    <form action="mailto:lucyranglova133@gmail.com" method="post" class="contact-form">
+                        <div class="input-wrap">
+                            <input class="contact-input" autocomplete="off" name="First Name" type="text" required>
+                            <label>First Name</label>
+                            <i class='icon bx bx-id-card'></i>
+                        </div>
+
+                        <div class="input-wrap">
+                            <input class="contact-input" autocomplete="off" name="Last Name" type="text" required>
+                            <label>Last Name</label>
+                            <i class='icon bx bx-id-card'></i>
+                        </div>
+
+                        <div class="input-wrap">
+                            <input class="contact-input" autocomplete="off" name="email" type="text" required>
+                            <label>Email</label>
+                            <i class='icon bx bx-envelope' ></i>
+                        </div>
+
+                        <div class="input-wrap textarea">
+                            <textarea name="message" autocomplete="off" class="contact-input" required></textarea>
+                            <label>Message</label>
+                            <i class='icon bx bx-message-rounded-detail' ></i>
+                        </div>
+
+                        <div class="contact-buttons">
+                            <button class="btn upload">
+                                <span>
+                                    <i class='bx bx-paperclip'></i> Add attachement
+                                </span>
+                                <input type="file" name="attachement">
+                            </button>
+                            <input type="submit" value="Send message" class="btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html> 
